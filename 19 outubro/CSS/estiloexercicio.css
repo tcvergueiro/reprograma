@@ -1,0 +1,19 @@
+
+
+div.post-twitter {
+    background-color: white;
+    width: 50%;
+    border: 1px solid lightgray;
+    margin: auto;
+
+}
+
+div.post-twitter h1 {
+    font-size: 16px;
+}
+
+body {
+    font-family: Helvetica;
+    color: grey;
+    background-color:white;
+}

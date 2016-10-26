@@ -1,0 +1,85 @@
+
+div.post
+{
+    border-top-color: #e5e6e9;
+    border-left-color: #dfe0e4;
+    border-right-color: #dfe0e4;
+    border-bottom-color: #d0d1d5;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    /*background-color: #e9ebee;*/
+    background-color:#fbf4ff;
+    padding-top: 40px;
+}
+
+img.avatar
+{
+    width: 40px;
+    border: 1px solid #e6e6e6;
+    float: left;
+    margin-right: 10px;
+}
+div.post h2 
+{
+    font-size: 14px;
+    font-weight: bold;
+    /*color: #365899;*/
+    color: #7F479B;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 5px; 
+}
+
+#timeline{
+    margin-left:auto;
+    margin-right: auto;
+    width: 502px;
+}
+.post header time {
+    font-size: 12px;
+    color: #90949c;
+    }
+
+.conteudo
+{
+    font-size: 14px;
+}
+
+.conteudo img {
+    width: 100%;
+    border: 1px solid #e6e6e6;
+}
+
+.conteudo p {
+    line-height: 17px;
+}
+
+header.navbar{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    /*background-color: #3b5998; Cor do Facebook*/
+    background-color: rgba(70, 39, 85, 0.9); /*Cor da Reprograma*/
+    padding-top: 7px;
+}
+
+.alinharNoMeio
+{
+    width: 502px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logoReprograma {
+    height: 25px;
+}

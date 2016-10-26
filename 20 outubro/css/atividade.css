@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: verdana;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+header {
+    background: purple;
+    margin-bottom: 25px;
+}
+#reprograma img {
+    width: 250px;
+}
+#reprograma {
+    padding: 10px;
+    text-align: center; 
+}
+.container 
+{
+    width: 1140px;
+    margin: 0 auto;
+}
+#fundadoras, #alunas {
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgba(210, 210, 210, 0.8);
+}
+#fundadoras {
+    width: 20%;
+    margin-right: 25px;
+    float: left;
+}
+#alunas {
+    float: left;
+    width: calc(100%-20%-25px);
+    }
+#alunas .card {
+    width: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid rgba(210, 210, 210, 0.8);
+    border-radius: 5px;
+    float: left;
+    }
+
+    .social-media {
+        margin: 1px 0;
+    }
+
+    .social-media ul {
+        min-width: 100px;
+        text-align: center;
+    }
+    .social-media ul li {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 30px;
+        vertical-align: bottom;
+        display: inline-block;
+    }
+    .facebook-link {
+        background: rgb(red, green, blue)
+    }

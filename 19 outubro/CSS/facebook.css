@@ -1,0 +1,25 @@
+div.post {
+    width: 502px;
+    height:449px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 12px;
+
+}
+body{
+background-color: green;
+font-family: Arial, Helvetica, sans-serif;
+/*background-color: #e9ebee;*/
+}
+
+img.avatar
+{width: 40px;
+border: 1px solid #e6e6e6  }
+div.post h2 {
+    font-size: 16px;
+    color: 365899;
+    position: relative;
+    top: -40px;
+    left: 52px;
+    margin-top: 0
+}

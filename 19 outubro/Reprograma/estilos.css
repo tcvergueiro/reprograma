@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color:#fbf4ff;
+    margin: 0px;
+    padding: 43px 0px 0px 0px;
+    text-align: center;
+}
+header.navbar {
+    height: 35px;
+    width: 100%;
+    background-color: rgba(70, 39, 85, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+img.logoreprograma {
+    width: 10%;
+}
+.nome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: purple;
+}
+
+div.fundadoras {
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5 #dfe0e4;
+    background-color: white;
+    width: 15%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    box-sizing: border-box;
+}
+
+div.posts {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.fundadoras .post {
+    float: none;
+    margin: 0px auto;
+}
+
+.alunas .post {
+    margin: 0px auto;
+}
+
+.alunas .posts::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.alunas {
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5 #dfe0e4;
+    background-color: white;
+    width: calc(100% - 15%);
+    box-sizing: border-box;
+    float: left;
+}
+
+.alunas .posts::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.post {
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5 #dfe0e4;
+    background-color: white;
+    padding: 12px;
+    margin: 5px;
+    width: 120px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.fotos {
+    border: 1px;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5 #dfe0e4;
+    width: 100px;
+}

@@ -1,0 +1,44 @@
+    body {
+             font-family: Arial, Helvetica, sans-serif;
+             color: #90949c;
+             background-color: #e9ebee;
+             margin: 0px;
+             padding: 0px;
+        }    
+
+   h1 {color:white;
+    position: fixed;
+    top: 0px;
+    background-color: #3b5998;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        z-index: 2;
+    
+    }
+
+div.post{background-color: white;
+width: 50%;
+margin: 10px auto 10px auto;
+border-color:#bbb; 
+border-style: solid;
+padding: 10px;
+border-width: 1px;
+position: relative;
+top: 35px;
+z-index: 1;
+}
+
+div.avatar{width: 10%;
+position: absolute;
+left: 5px;
+border-width: 12px;
+}
+div.post h2{
+    position: relative;
+    left: 60px;
+}
+
+    img {width:100%
+    }
+    a:hover {text-decoration: unset}
