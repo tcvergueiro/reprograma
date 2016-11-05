@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios Javascript</title>
+</head>
+
+<body>
+
+    <!-->Exercício 1</!-->
+
+    <script>
+
+var num1 = prompt("Por favor, digite um número:");
+var num2 = prompt("Por favor, digite outro número:");
+
+function maiorNumero(num1, num2) {
+
+    if (num1 > num2) {
+        alert("O maior número é o primeiro, ou seja:" + num1);
+    }
+    else if (num2 > num1) {
+        alert("O maior número é o segundo, ou seja:" + num2);
+    }
+    else {
+        alert("os números são iguais");
+    }
+
+}
+
+</script>
+
+    <!-->Exercício 1</!-->
+
+    <!-->Exercício 2</!-->
+
+    <script>
+    
+maiorNumero(num1, num2);
+
+
+function digaMeuFuturo (nomeDaProfissao, nomeDoLugar, nomeDoNamorado, quantosFilhos)
+{
+    var futuro = "Você será uma " + nomeDaProfissao + " na " + nomeDoLugar + " e vai se casar com " + nomeDoNamorado + " e vocês terão " + quantosFilhos + " filhos.";
+    alert (futuro);
+}
+
+digaMeuFuturo("veterinária", "México", "Fábio Jr.", "40");
+
+
+</script>
+
+    <!-->Exercício 2</!-->
+
+    <!-->Exercício 3 </!-->
+
+
+    <p>
+        "Estou pensando em uma letra. Adivinhe qual é: a, b, c, d ou e?"
+    </p>
+
+    <input type="text" id="digiteLetra">
+    <button onclick="adivinheALetra();"> Tente adivinhar!</button>
+
+    <p id="resultado"></p>
+    <script>
+    function adivinheALetra () {
+        var mensagem;
+        var letra = document.getElementById("digiteLetra").value;
+
+        if (letra == "c") {
+        mensagem = "Você acertou! Como você sabia?";
+        }
+        
+        else if (letra == "b" || letra == "d") {
+        mensagem = "Hmmmmm, era quase essa!";
+        }
+        
+        else {
+        mensagem = "Xi, nem perto!";    
+        }
+    
+    document.getElementById("resultado").innerHTML = mensagem;
+};
+
+</script>
+
+</!--> 
+
+    <!-->Exercício 4</!-->
+
+<title>Exercício Teste</title>
+</head>
+
+<body>
+    <table border="2">
+        <h1>Site de venda de roupas</h1>
+        <th>Produtos</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <tr>
+            <td>Calça jeans</td>
+            <td>Camisa</td>
+            <td>Saia</td>
+        </tr>
+        <tr>
+            <td>Calça tamanhos P, M e G</td>
+            <td>Camisa social branca</td>
+            <td>Saias lindas e floridas</td>
+        </tr>
+
+        <tr>
+            <td>R$ 10</td>
+            <td>R$ 20</td>
+            <td>R$ 30</td>
+        </tr>
+    </table>
+
+    <form>
+        <h2>Por favor, preencha o nome e o valor do produto:</h2>
+
+        <input type="text" id="nomeProduto" placeholder="Digite o nome do produto">
+        <input type="text" id="precoProduto" placeholder="Digite o valor do produto">
+    </form>
+
+        <button onclick=function1(nomeProduto,precoProduto);>Enviar</button>
+
+        <script>
+        function function1(nomeProduto,preçoProduto) {
+        var nomeProduto = document.getElementById("nomeProduto").value;
+        var precoProduto = document.getElementById ("precoProduto").value;
+
+        var confirmacao = confirm("Deseja finalizar a compra?");
+
+        if (confirmacao == true) {
+            alert("Parabéns! Você acabou de adquirir o seguinte produto: " + nomeProduto + " e você pagou" + precoProduto);
+        }
+        else {
+        alert("Seu carrinho está vazio e/ou a compra não foi finalizada. Tente outra vez!");
+        }
+    };
+
+
+
+</body>
+
+</html>

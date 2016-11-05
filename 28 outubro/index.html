@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios 28/10</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <!-- Início do exercício 1!-->
+
+    <header class="title">
+        <div class="maintitle">
+            <h1>Loja de Discos</h1>
+        </div>
+    </header>
+
+    <div class="quadrogeral">
+
+        <div class="post">
+            <header>
+                <h2>Xou da Xuxa 4</h2>
+                <img class="avatar" src="img/xuxa4.jpg" alt="Xou da Xuxa 4">
+            </header>
+            <div class="content">
+                <li>
+                    Lançamento: 1900 e bolinha
+                </li>
+                <li>
+                    Preço: R$ 10
+                </li>
+            </div>
+        </div>
+        <div class="post">
+            <header>
+                <h2>Seleção Fãs</h2>
+                <img class="avatar" src="img/xoudaxuxa.jpg" alt="Seleção Fãs Xou da Xuxa">
+            </header>
+            <div class="content">
+                <li>
+                    Lançamento: 1900 e bolinha
+                </li>
+                <li>
+                    Preço: R$ 10
+                </li>
+            </div>
+        </div>
+        <div class="post">
+            <header>
+                <h2>Xuxa Só Para Baixinhos</h2>
+                <img class="avatar" src="img/xuxabaixinhos.jpg" alt="Xuxa Só para Baixinhos">
+            </header>
+            <div class="content">
+                <li>
+                    Lançamento: 1900 e bolinha
+                </li>
+                <li>
+                    Preço: R$ 20
+                </li>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form">
+
+        <h2>Por favor, preencha os campos abaixo:</h2>
+        <p>Nome do vinil:</p>
+        <input type="text" id="nomeVinil" placeholder="Inserir o nome do disco">
+        <p>Forma de pagamento: aceitamos dinheiro e cartão de débito ou crédito:</p>
+        <input type="text" id="formaPagamento" placeholder="débito ou crédito" onfocusout="checaPagamento();">
+        <p>Favor informar para qual cidade será enviado o seu pedido:</p>
+        <input type="text" id="cidadeEnvio" placeholder="Cidade de envio">
+
+        <button onclick="pagamento(formaPagamento,cidadeEnvio)" ;>Enviar</button>
+
+    </div>
+    <script>
+
+        function pagamento(formaPagamento,cidadeEnvio) {
+        var formaPagamento = document.getElementById("formaPagamento").value;
+        var cidadeEnvio = document.getElementById("cidadeEnvio").value;
+     
+        if (cidadeEnvio == "São Paulo" || cidadeEnvio == "Rio de Janeiro") {
+            alert ("Valor do frete: R$ 10")  
+        }    
+        else {
+            alert ("Não entregamos para a sua cidade")
+        }
+    };
+
+    function checaPagamento(){
+        var formaPagamento = document.getElementById("formaPagamento").value;
+        
+        if (formaPagamento == "débito" || formaPagamento == "crédito") {
+            alert("Atenção, só aceitamos as bandeiras Visa e MasterCard;");
+        }
+    }
+
+</script>
+
+    <!--Fim do exercício 1!-->
+
+    <!--Início do exercício 3!-->
+
+    <h1>Loja de calçados</h1>
+
+    <h3>Por favor, escolha o tipo de calçado que você deseja comprar:</h3>
+    <input type="text" id="tipoSapato" placeholder="Inserir o tipo de calçado" onfocus="">
+    <p>Calçados disponíveis: tênis, bota, chinelo e pantufa;</p>
+
+    <h3>Por favor, escolha a cor do calçado:</h3>
+    <input type="text" id="corSapato" placeholder="Inserir a cor do calçado">
+    <p>Cores: verde, amarelo, azul e preto;</p>
+
+    <h3>Por favor, escolha a numeração do calçado:</h3>
+    <input type="text" id="numSapato" placeholder="Inserir a numeração">
+    <p>Numerações: 35, 36, 37 e 38.</p>
+
+    <button onclick="sapato()" ;>Enviar</button>
+
+    <script>
+function sapato() {
+    var tipoSapato = document.getElementById("tipoSapato").value;
+    var corSapato = document.getElementById("corSapato").value;
+    var numSapato = document.getElementById("numSapato").value;
+
+if ((tipoSapato == "bota" && (corSapato == "preta" || numSapato == "35"))) {
+    alert ("Infelizmente, não temos este modelo disponível.");
+} 
+else if (tipoSapato == "chinelo" && corSapato == "azul") {
+    alert ("Infelizmente, não temos este modelo disponível.");
+}
+else if (tipoSapato == "tênis" && numSapato == "38") {
+    alert ("Infelizmente, não temos este modelo disponível.");
+}else { 
+    alert("Temos o que você quer !! Compra finalizada")
+}
+}
+    </script>
+
+    <!-- Fim do exercício 3!-->
+
+</body>
+
+</html>

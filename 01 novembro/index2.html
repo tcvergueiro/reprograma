@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício formulário</title>
+</head>
+
+<body>
+
+    <form>
+
+        <h1>Formulário de acesso</h1>
+
+        <h2>Por favor, preencha os campos abaixo:</h2>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" placeholder="Digite aqui o seu e-mail">
+        <p>
+            <label for="Senha">Senha:</label>
+            <input type="password" id="senha" placeholder="Digite aqui a sua senha">
+        </p>
+        <button onclick="acesso();">Enviar</button>
+
+    </form>
+
+    <script>
+
+function acesso(email,senha) {
+    var emailCorreto = "teste@teste.com";
+    var senhaCorreta = "12345";
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
+
+if(email == emailCorreto && senha == senhaCorreta){
+    alert("Parabéns! Você seguiu para a próxima etapa.");
+}
+else { 
+    alert("Favor digitar os dados novamente.");
+}
+}
+
+</script>
+
+
+</body>
+
+</html>
